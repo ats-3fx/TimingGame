@@ -9,7 +9,10 @@ public class Main {
         var f = new JFrame("test");
         f.setVisible(true);
         var pane = f.getContentPane();
-        var view = new View();
+        var input = new Input();
+        f.addMouseListener(input);
+        var view = new View(input);
+        f.addMouseMotionListener(input);
 
         pane.add(view);
 
