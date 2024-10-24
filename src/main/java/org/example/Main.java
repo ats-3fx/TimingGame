@@ -3,9 +3,10 @@ package org.example;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         var f = new JFrame("test");
         f.setVisible(true);
         var pane = f.getContentPane();
